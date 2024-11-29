@@ -9,10 +9,6 @@
 </script>
 
 <div class="p-6 bg-white shadow-md rounded-lg">
-  <h3 class="text-xl font-bold text-gray-800 mb-4">
-    Set Up Your Brand Profile
-  </h3>
-
   <form on:submit|preventDefault={submitBrandProfile}>
     <!-- Brand Name -->
     <div class="mb-4">
