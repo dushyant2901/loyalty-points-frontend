@@ -1,4 +1,5 @@
 <script>
+  import SetUpBrandProfile from "../../components/SetUpBrandProfile.svelte";
   let activePage = "brand-profile"; // Default active page
 </script>
 
@@ -49,6 +50,9 @@
           Here you can set up your brand's details.
         </p>
         <!-- TODO: Brand Component -->
+        <div class="w-[500px] mx-auto py-2">
+          <SetUpBrandProfile />
+        </div>
       {:else if activePage === "loyalty-issuance"}
         <h3 class="text-2xl font-bold text-gray-800">Issue Loyalty Points</h3>
         <p class="text-sm text-gray-600 mt-2">
