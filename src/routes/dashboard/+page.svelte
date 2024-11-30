@@ -1,6 +1,7 @@
 <script>
   import SetUpBrandProfile from "../../components/SetUpBrandProfile.svelte";
   import LoyaltyPointManagement from "../../components/LoyaltyPointManagement.svelte";
+  import LoyaltyPointIssuence from "../../components/LoyaltyPointIssuence.svelte";
 
   let loyaltyPoints = [
     { id: 1, name: "Reward Points", totalSupply: 10000 },
@@ -19,7 +20,7 @@
         <li>
           <a
             href="#brand-profile"
-            class="block py-2 px-4 mb-2 rounded hover:bg-blue-700"
+            class="block py-2 px-4 mb-2 rounded hover:bg-blue-700 text-lg"
             on:click={() => (activePage = "brand-profile")}
           >
             Set Up Brand Profile
@@ -28,7 +29,7 @@
         <li>
           <a
             href="#loyalty-issuance"
-            class="block py-2 px-4 mb-2 rounded hover:bg-blue-700"
+            class="block py-2 px-4 mb-2 rounded hover:bg-blue-700 text-lg"
             on:click={() => (activePage = "loyalty-issuance")}
           >
             Issue Loyalty Points
@@ -37,7 +38,7 @@
         <li>
           <a
             href="#manage-loyalty"
-            class="block py-2 px-4 mb-2 rounded hover:bg-blue-700"
+            class="block py-2 px-4 mb-2 rounded hover:bg-blue-700 text-lg"
             on:click={() => (activePage = "manage-loyalty")}
           >
             Manage Loyalty Points
@@ -70,6 +71,9 @@
           Create and issue loyalty points for your brand.
         </p>
         <!-- TODO: Add Loyalty Point Issuance Form Component -->
+        <div class="w-[500px] mx-auto py-2">
+          <LoyaltyPointIssuence />
+        </div>
       {:else if activePage === "manage-loyalty"}
         <h3 class="text-2xl font-bold text-gray-800 text-center">
           Manage Loyalty Points

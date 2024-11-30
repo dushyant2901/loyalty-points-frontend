@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
+  // dummy data
   let loyaltyPoints = [
     { id: 1, name: "Reward Points", totalSupply: 10000, symbol: "RP" },
     { id: 2, name: "Membership Points", totalSupply: 5000, symbol: "MP" },
