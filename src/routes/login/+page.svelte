@@ -51,10 +51,19 @@
     </div>
     <div class="flex items-center justify-between">
       <button
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
         type="submit"
       >
         Login
+      </button>
+    </div>
+    <div class="flex items-center justify-between pt-2">
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+        type="submit"
+        on:click={() => (window.location.href = "/dashboard")}
+      >
+        Test
       </button>
     </div>
   </form>
