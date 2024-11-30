@@ -5,6 +5,7 @@
   const submitBrandProfile = () => {
     console.log("Brand Profile Submitted:", brandName, brandDescription);
     // TODO: Handle form submission
+    alert("Brand profile submitted");
   };
 </script>
 
