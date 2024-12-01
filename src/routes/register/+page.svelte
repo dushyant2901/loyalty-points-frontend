@@ -6,7 +6,7 @@
     validateEmail,
     validatePassword,
     getPasswordStrength,
-  } from "../../helpers/helpers"; // Import the helper functions
+  } from "../../helpers/helpers";
 
   let email: string = "";
   let password: string = "";
@@ -17,6 +17,9 @@
   let showPassword: boolean = false;
   let passwordStrength: string = "";
 
+  const handlePasswordChange = () => {
+    passwordStrength = getPasswordStrength(password);
+  };
   // Registration logic
   const register = async () => {
     errorMessage = "";
@@ -117,7 +120,7 @@
         bind:value={password}
         class="shadow-sm appearance-none border border-gray-300 rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
         required
-        on:input={() => getPasswordStrength(password)}
+        on:input={handlePasswordChange}
       />
       <button
         type="button"
